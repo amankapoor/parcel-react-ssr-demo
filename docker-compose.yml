@@ -1,0 +1,10 @@
+version: "2.1"
+
+services:
+  parcel-react-ssr:
+    image: parcel-react-ssr-demo
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 1234:1234

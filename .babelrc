@@ -1,0 +1,17 @@
+{
+  "presets": ["env", "react"],
+  "plugins": ["transform-class-properties"],
+  "env": {
+    "server": {
+      "presets": ["env", "react"],
+      "plugins": [
+        "transform-class-properties",
+        "babel-plugin-dynamic-import-node"
+      ]
+    },
+    "client": {
+      "presets": ["env", "react"],
+      "plugins": ["transform-class-properties"]
+    }
+  }
+}
